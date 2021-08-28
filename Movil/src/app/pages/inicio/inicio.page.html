@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>MENÚ</ion-title>
+    <ion-button color="white" slot="end">
+      <ion-icon class="menu" color="dark" name="ellipsis-vertical-outline"></ion-icon>
+    </ion-button>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row >
+      <ion-col size="6">
+        <ion-button class="ing_pedidos" routerLink="#">
+          <ion-icon name="create-outline"></ion-icon>
+        </ion-button>
+        <p>Ingresar Pedidos</p>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="ver_pedidos" routerLink="/pedidos">
+          <ion-icon name="cube-outline"></ion-icon>
+        </ion-button>
+        <p>Ver Pedidos</p>
+      </ion-col>
+      <ion-col size="6">  
+        <ion-button class="rut_clientes" routerLink="#">
+          <ion-icon name="git-compare-outline"></ion-icon>
+        </ion-button>
+        <p>Rutas Clientes</p>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="list_clientes" routerLink="#">
+          <ion-icon name="people-outline"></ion-icon>
+        </ion-button>
+        <p>Lista de clientes</p>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="metas" routerLink="#">
+          <ion-icon name="flag-outline"></ion-icon>
+        </ion-button>
+        <p>Metas</p>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="sincro" routerLink="#">
+          <ion-icon name="wifi-outline"></ion-icon>
+        </ion-button>
+        <p>Sincronización</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

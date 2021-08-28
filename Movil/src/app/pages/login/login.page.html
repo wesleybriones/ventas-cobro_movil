@@ -1,0 +1,50 @@
+<ion-content>
+  <ion-slide>
+      <form (ngSubmit)="login(user.usuario,user.password)" #fLogin="ngForm">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/images/logo.png">
+            </ion-col>
+          </ion-row>
+        
+          <ion-row>
+            <ion-col>
+                <ion-list>
+                  <ion-item>
+                    <ion-label color="success">Usuario:</ion-label>
+                    <ion-input name="user"
+                                type="text"
+                                required
+                                [(ngModel)]="user.usuario"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label color="success">Contraseña: </ion-label>
+                  <ion-input name="password"
+                                type="password"
+                                required
+                                [(ngModel)]="user.password"></ion-input>
+                </ion-item>
+
+              </ion-list>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button 
+                          type="submit"
+                          (click)="login(user.usuario, user.password)"
+                          color="tertiary"
+                          shape="round"
+                          [disabled]="!fLogin.valid"
+                          routerLink="/inicio">
+                Entrar
+            </ion-button>
+            <p>¿Te olvidaste de la contraseña?</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </ion-slide>
+</ion-content>

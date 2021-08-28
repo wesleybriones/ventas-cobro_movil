@@ -1,0 +1,7 @@
+{
+  "name": "ventas_moviles",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
